@@ -1,0 +1,162 @@
+/* footer */
+footer {
+    background-color: var(--color-dark);
+    padding: 40px 0;
+    border-top: 1px solid #1f3554; 
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    font-family: var(--font-header);
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--color-accent-hover);
+    letter-spacing: 2px;
+}
+
+.footer-links p {
+    font-size: 0.9rem;
+    color: var(--color-light-grey);
+}
+
+.social-links a {
+    color: var(--color-light-grey);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--color-accent);
+}
+
+/* responisveness */
+@media (max-width: 768px) {
+    .section-padding {
+        padding: 40px 0; 
+    }
+    
+    .section-title {
+        font-size: 2rem; 
+        margin-bottom: 40px;
+    }
+    .nav-content {
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+
+    .desktop-btn {
+        display: none; 
+    }
+
+    .menu-toggle {
+        display: flex; 
+    }
+
+    
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background-color: var(--color-dark);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.4s ease, visibility 0.4s ease;
+        border-top: 1px solid var(--color-charcoal);
+        padding-bottom: 20px;
+    }
+    
+    nav.active {
+        opacity: 1;
+        visibility: visible;
+        z-index: 99;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 15px 0;
+        font-size: 1.2rem;
+        display: block;
+    }
+    
+ 
+    nav ul li a::after {
+        display: none;
+    }
+
+    /*  Hero Section , was fixing it, final touches so wrote it here only  */
+    .hero-overlay h1 {
+        font-size: 3rem; 
+        letter-spacing: 2px;
+    }
+
+    .hero-overlay p {
+        font-size: 1rem;
+    }
+    
+
+
+
+    /* --- Listings --- */
+    .car-scroll-container {
+        margin: 0 10px;
+        gap: 15px;
+        scroll-snap-type: x mandatory; /* Force snapping on mobile */
+    }
+    
+    .car-card {
+        min-width: 85vw; /* Make cards take up most of the mobile screen */
+        height: auto;
+        scroll-snap-align: center;
+    }
+    
+    .scroll-btn {
+        display: none; /* Hide navigation buttons, rely on touch scroll */
+    }
+
+    /* --- Packages --- */
+    .packages-grid {
+        grid-template-columns: 1fr; /* Stack packages vertically */
+        padding: 0 20px;
+    }
+
+    /* --- Contact --- */
+    .contact-grid {
+        grid-template-columns: 1fr; /* Stack form and map vertically */
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .map-placeholder {
+        height: 250px; /* Reduced map height for mobile */
+    }
+
+    /* --- Footer --- */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        margin-top: 15px;
+    }
+
+    .social-links {
+        margin-top: 10px;
+    }
+}

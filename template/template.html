@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>car details</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="CarsStyle2.css">
+    <link rel="stylesheet" href="car-details-v3.css">
+</head>
+<body>
+
+    <header id="main-nav">
+        <div class="header-container">
+            
+            <button onclick="history.back()" class="nav-back-btn" title="Go back to Fleet">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            
+            <a href="home.html" class="nav-logo">
+                <img src="/image/logo-removebg-preview.png" alt="Ankur travels Logo" class="logo-image" id="logoImage">
+            </a>
+
+            <nav>
+                <button type="button" class="nav-link" id="openModalNavBtn">
+                    <i class="fas fa-phone-alt"></i> CONTACT
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="details-page-main-v3">
+        <div class="content-wrapper">
+            
+            <section class="car-visual-header">
+                <h1 class="vehicle-title" id="car-title">LOADING...</h1>
+                <p class="vehicle-subtitle" id="car-subtitle">...AWAITING DATA STREAM...</p>
+                <div class="car-image-frame">
+                    <img src="/images/placeholder.jpg" alt="Loading Vehicle Image" class="main-car-image" id="car-image">
+                </div>
+            </section>
+
+            <!-- <div class="data-stream-bar" id="data-stream-bar">
+                <div class="data-item"><i class="fas fa-gauge-high cyan-accent"></i> <span id="spec-01">Fetching Specs...</span></div>
+                <div class="data-item"><i class="fas fa-car-side cyan-accent"></i> <span id="spec-02">Fetching Specs...</span></div>
+                <div class="data-item"><i class="fas fa-gas-pump cyan-accent"></i> <span id="spec-03">Fetching Specs...</span></div>
+                <div class="data-item"><i class="fas fa-users cyan-accent"></i> <span id="spec-04">Fetching Specs...</span></div>
+            </div> -->
+
+            <div class="details-grid-v3">
+                
+                <section class="vehicle-protocol-form">
+                    <h2 class="section-heading-v3"><i class="fas fa-microchip"></i> VEHICLE <span class="cyan-accent">PROTOCOL</span></h2>
+                    
+                    <p class="description-protocol" id="car-description">
+                        Loading detailed vehicle description and operational protocol...
+                    </p>
+
+                    <div class="price-summary-box">
+                        <span class="summary-label">INITIAL ACCESS CHARGE FROM</span>
+                        <span class="summary-price" id="car-summary-price">Loading...</span>
+                    </div>
+
+                    <div id="booking-interface" class="interface-panel">
+                        <h3 class="form-title">INITIATE <span class="cyan-accent">RESERVATION</span></h3>
+                        <button type="button" class="enter-btn full-width-btn" id="openModalBtn">
+                            PROCEED TO CONTACT OPTIONS
+                        </button>
+                    </div>
+                </section>
+
+                <section class="pricing-matrix">
+                    <h2 class="section-heading-v3"><i class="fas fa-receipt"></i> RATE <span class="cyan-accent">MATRIX</span></h2>
+
+                    <div class="tab-selector">
+                        <button class="data-tab active" data-tab="km-rates-panel">KM & DAY RATES</button>
+                        <button class="data-tab" data-tab="driver-fees-panel">DRIVER FEES</button>
+                        <button class="data-tab" data-tab="protocol-panel">RENTAL PROTOCOL</button>
+                    </div>
+
+                    <div class="data-field-area">
+                        
+                        <div id="km-rates-panel" class="data-panel active">
+                            <h3 class="data-group-title">PER KILOMETER BASE CHARGE</h3>
+                            <div class="rate-table-v2">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>AREA OF OPERATION</th>
+                                            <th>A/C ACTIVE</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="km-rate-body">
+                                        <tr><td colspan="2">Loading KM Rates...</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <h3 class="data-group-title">MINIMUM DAILY CHARGES</h3>
+                            <div class="rate-table-v3">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>BOUNDARY</th>
+                                            <th>DAY MINIMUM</th>
+                                            <th>CHARGE</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="daily-min-body">
+                                        <tr><td colspan="3">Loading Daily Minimums...</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div id="driver-fees-panel" class="data-panel">
+                            <h3 class="data-group-title">DRIVER LOGISTICS ALLOWANCE</h3>
+                            <ul class="protocol-list" id="driver-fees-list">
+                                <li>Loading Driver Fee Data...</li>
+                            </ul>
+                        </div>
+
+                        <div id="protocol-panel" class="data-panel">
+                            <h3 class="data-group-title">MANDATORY PROTOCOLS & FEES</h3>
+                            <ul class="protocol-list" id="protocol-list">
+                                <li>Loading Protocol Data...</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    
+    <button class="floating-cta enter-btn" id="openModalFloat">
+        <i class="fas fa-bookmark"></i> BOOK THIS VEHICLE
+    </button>
+
+    <div id="contactModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 class="modal-title">INITIATE BOOKING TRANSMISSION</h2>
+            <p class="modal-subtext">SELECT YOUR PREFERRED COMMUNICATION CHANNEL FOR IMMEDIATE RESPONSE.</p>
+
+            <div class="contact-options-grid">
+                
+                <a href="tel:+919435796758" class="contact-option call-option" id="call-link">
+                    <i class="fas fa-phone-volume"></i>
+                    <h4>DIRECT CALL</h4>
+                    <p>Immediate human operator assistance.</p>
+                </a>
+
+                <a href="https://wa.me/919435796758" target="_blank" class="contact-option whatsapp-option" id="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i>
+                    <h4>WHATSAPP TEXT</h4>
+                    <p>Send details and receive a quote instantly.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="tech-footer">
+        <p>ANKUR TRAVELS | JORHAT, ASSAM | © 2025 </p>
+    </footer>
+
+    <script src="car-details.js"></script>
+</body>
+</html>

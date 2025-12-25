@@ -1,0 +1,431 @@
+/*   CONTACT  */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-form-area h3, .map-area h3 {
+    font-family: var(--font-header);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    border-bottom: 2px solid var(--color-accent);
+    padding-bottom: 10px;
+    display: inline-block;
+    box-shadow: 0 5px 10px rgba(77, 196, 211, 0.1);
+}
+
+.contact-form-area input[type="text"],
+.contact-form-area input[type="email"],
+.contact-form-area textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: var(--color-charcoal);
+    border: 1px solid #333;
+    color: var(--color-white);
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.contact-form-area input:focus, .contact-form-area textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 5px rgba(77, 196, 211, 0.5);
+}
+
+.map-area p {
+    color: var(--color-light-grey);
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.map-placeholder {
+    height: 350px;
+    background-color: var(--color-charcoal);
+    border: 2px solid var(--color-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-light-grey);
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.map-placeholder::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-accent);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 2s infinite ease-out;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(77, 196, 211, 0.7);
+        opacity: 0.7;
+    }
+    100% {
+        box-shadow: 0 0 0 30px rgba(77, 196, 211, 0);
+        opacity: 0;
+    }
+}
+
+
+ /* eitu moi style(restyle) repeat korisu  */
+.contact-grid-main {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr; 
+    gap: 60px;
+    align-items: flex-start;
+    padding: 0 40px; 
+    position: relative;
+}
+
+
+/* .contact-grid-main::before {
+    content: '';
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 70%;
+    width: 2px;
+    background-color: rgba(77, 196, 211, 0.4);
+    box-shadow: 0 0 10px rgba(77, 196, 211, 0.2);
+    z-index: 5;
+} */
+
+
+.contact-info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-right: 30px; 
+}
+
+.contact-info-block h3 {
+    font-family: var(--font-header);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-accent-hover);
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(77, 196, 211, 0.5);
+}
+
+.core-info-group {
+    background-color: var(--color-charcoal);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(77, 196, 211, 0.3);
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+.info-item:hover {
+    background-color: rgba(77, 196, 211, 0.1);
+    box-shadow: inset 0 0 5px rgba(77, 196, 211, 0.3);
+}
+
+.info-item i {
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    margin-right: 20px;
+    width: 25px;
+    text-align: center;
+}
+
+.item-details h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: 5px;
+}
+
+.item-details a {
+    font-size: 0.95rem;
+    color: var(--color-light-grey);
+    text-decoration: none;
+    line-height: 1.4;
+    display: block;
+}
+
+.item-details a:hover {
+    color: var(--color-accent-hover);
+    text-decoration: underline;
+}
+
+
+.action-icons-final-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px;
+    background-color: var(--color-charcoal);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(77, 196, 211, 0.3);
+}
+
+.action-header {
+    grid-column: 1 / -1; 
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--color-white);
+    border-bottom: 1px solid rgba(77, 196, 211, 0.15);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.brand-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 5px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--color-white);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, filter 0.3s ease;
+    text-align: center;
+}
+
+.brand-icon i {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+    color: var(--color-white); 
+    transition: transform 0.3s ease;
+}
+
+.icon-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-light-grey);
+}
+
+.brand-icon:hover {
+    transform: scale(1.15); 
+    box-shadow: 0 0 20px var(--brand-glow-color, rgba(77, 196, 211, 0.9)); 
+    z-index: 10;
+}
+
+.brand-icon:hover i {
+    transform: scale(1.1);
+}
+
+ /* hover r glow kita  */
+.call-brand { --brand-glow-color: rgba(77, 196, 211, 0.9); }
+.call-brand i { color: var(--color-accent); }
+.call-brand:hover { background-color: rgba(77, 196, 211, 0.1); }
+
+.whatsapp-brand { --brand-glow-color: rgba(37, 211, 102, 0.9); }
+.whatsapp-brand i { color: #25D366; }
+.whatsapp-brand:hover { background-color: rgba(37, 211, 102, 0.1); }
+
+.instagram-brand { --brand-glow-color: rgba(214, 24, 159, 0.8); }
+.instagram-brand i { color: #C13584; }
+.instagram-brand:hover { background-color: rgba(193, 53, 132, 0.1); }
+
+.facebook-brand { --brand-glow-color: rgba(24, 119, 242, 0.9); }
+.facebook-brand i { color: #1877F2; }
+.facebook-brand:hover { background-color: rgba(24, 119, 242, 0.1); }
+
+
+.map-container {
+    padding-left: 30px; 
+}
+
+.map-container h3 {
+    font-family: var(--font-header);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: 25px;
+}
+
+.map-embed-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 70%; 
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 3px solid var(--color-dark);
+    box-shadow: 0 0 0 3px var(--color-accent), 0 10px 40px rgba(0, 0, 0, 0.8);
+    transition: all 0.5s ease;
+}
+
+.map-embed-wrapper:hover {
+    border-color: var(--color-accent-hover);
+    box-shadow: 0 0 0 3px var(--color-accent-hover), 0 15px 50px rgba(77, 196, 211, 0.6);
+}
+
+.map-embed-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: filter 0.5s ease;
+}
+
+.map-embed-wrapper:hover iframe {
+    filter: brightness(1.05); 
+}
+
+@media (max-width: 768px) {
+    /* eikaita r style akou likhisu but 1st marginn tu set kori loisilu right side a  */
+    .map-container{
+        margin-right: 5%;
+    }
+    .contact-info-block{
+        margin-right: 6%;
+    }
+    .contact-grid-main {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 0 20px;
+    }
+    
+    /* eitu anai thoisu mane moi eitu otorai ai dilu big screen t phir bhi thoi disu */
+    .contact-grid-main::before {
+        display: none;
+    }
+
+  /* phone t reverse order t set korisy , i mean 1st map ahisu uss ke bad baki bilak  */
+    .map-container {
+        order: -1; 
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    .contact-info-block {
+        order: 1; 
+        padding-right: 0;
+    }
+    
+    .contact-info-block h3 {
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    
+    .map-embed-wrapper {
+        padding-bottom: 80%; 
+        box-shadow: 0 0 0 3px var(--color-accent), 0 10px 40px rgba(0, 0, 0, 0.8);
+    }
+
+    .info-item {
+        justify-content: flex-start;
+        margin-bottom: 15px;
+    }
+
+   
+    .action-icons-final-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+    
+   
+    .brand-icon {
+        background-color: var(--color-dark);
+        border: 1px solid rgba(77, 196, 211, 0.3);
+        padding: 20px 5px;
+    }
+
+    .brand-icon:hover {
+        transform: scale(1.08); 
+        box-shadow: 0 0 15px var(--brand-glow-color);
+    }
+    
+    .brand-icon i {
+        font-size: 2rem;
+    }
+
+    .icon-label {
+        font-size: 0.75rem;
+    }
+    
+    
+    .call-brand:hover { background-color: rgba(77, 196, 211, 0.2); }
+    .whatsapp-brand:hover { background-color: rgba(37, 211, 102, 0.2); }
+    .instagram-brand:hover { background-color: rgba(193, 53, 132, 0.2); }
+    .facebook-brand:hover { background-color: rgba(24, 119, 242, 0.2); }
+}
+
+.action-icons-final-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px;
+    background-color: var(--color-charcoal);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(77, 196, 211, 0.3);
+}
+
+.action-header {
+    grid-column: 1 / -1; 
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--color-white);
+    border-bottom: 1px solid rgba(77, 196, 211, 0.15);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.brand-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 5px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--color-white);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, filter 0.3s ease;
+    text-align: center;
+}
+
+.brand-icon i {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+    color: var(--color-white); 
+    transition: transform 0.3s ease;
+}
+
+.icon-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-light-grey);
+}
+
+.brand-icon:hover {
+    transform: scale(1.15);
+        box-shadow: 0 0 20px var(--brand-glow-color, rgba(77, 196, 211, 0.9)); 
+    z-index: 10;
+}
+
+.brand-icon:hover i {
+    transform: scale(1.1);
+}

@@ -1,0 +1,257 @@
+/* //home the main one  */
+
+/* some of the style of other html sections are writtn herev , or overwritten  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-dark: #0a192f;      
+    --color-charcoal: #112240;  
+    --color-accent: #4dc4d3;   
+    --color-accent-hover: #66d9ef; 
+    --color-white: #ffffff;
+    --color-light-grey: #a8b2d1; 
+    --font-header: 'Montserrat', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+}
+
+body, html {
+    font-family: var(--font-body);
+    color: var(--color-white);
+    background-color: var(--color-dark);
+    scroll-behavior: smooth;
+    margin: 0;      
+    padding: 0;     
+    width: 100%;    
+    height: 100%;
+}
+main {
+    padding-top: 0; 
+    margin-top: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-family: var(--font-header);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(77, 196, 211, 0.2);
+}
+
+
+.cyan-accent {
+    color: var(--color-accent);
+}
+
+.dark-bg {
+    background-color: var(--color-charcoal);
+}
+
+
+/* btns */
+.btn-primary {
+    background-color: var(--color-accent);
+    color: var(--color-dark); 
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border: 2px solid var(--color-accent);
+    letter-spacing: 1px;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-accent-hover);
+    box-shadow: 0 0 15px rgba(77, 196, 211, 0.8); 
+    transform: translateY(-4px); 
+}
+
+.btn-secondary {
+    background: none;
+    color: var(--color-white);
+    border: 2px solid var(--color-accent); 
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-accent);
+    color: var(--color-dark);
+    box-shadow: 0 0 15px rgba(77, 196, 211, 0.6); 
+    transform: scale(1.05); 
+}
+
+                    /*END OF BASIC SET UP */
+
+
+
+
+
+/* hero section overwritten , cause in was not working in the style file of the hero section */
+/*  HERO SECTION  */
+
+
+#hero-slider {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--color-dark);
+    height: 100vh; 
+    
+
+    padding: 0;
+    margin: 0;
+}
+
+.slider-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%; 
+    position: relative;
+
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+
+   
+    animation: backgroundZoom 15s infinite alternate;
+}
+
+@keyframes backgroundZoom {
+    from { background-size: 110%; }
+    to { background-size: 100%; }
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-overlay h1 {
+    font-family: var(--font-header);
+    font-size: 5rem; 
+    margin-bottom: 15px;
+    font-weight: 900;
+    letter-spacing: 8px;
+    color: var(--color-white);
+    text-shadow: 0 0 20px rgba(77, 196, 211, 0.6); 
+    animation: textFadeIn 1s ease-out;
+}
+
+.hero-overlay p {
+    font-size: 1.5rem; 
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: var(--color-light-grey);
+}
+
+@keyframes textFadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+@media (max-width: 992px) {
+    
+    .hero-overlay h1 {
+        font-size: 1.8rem; 
+        letter-spacing: 6px;
+        margin-bottom: 12px;
+    }
+    .hero-overlay p {
+        font-size: 0.6rem; 
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero-slider {
+        height: 75vh; 
+        padding: 0;
+        margin: 0;
+    }
+
+    .slide {
+        animation: none; 
+    }
+    .hero-overlay h1 {
+        font-size: 1.2rem; 
+        letter-spacing: 2px;
+        margin-bottom: 8px;
+        margin-top: 10px;
+        text-shadow: 0 0 8px rgba(77, 196, 211, 0.6);
+    }
+
+    .hero-overlay p {
+        font-size: 0.5rem; 
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero-slider {
+        height: 65vh; 
+    }
+    .hero-overlay h1 {
+        font-size: 1rem; 
+    }
+    .hero-overlay p {
+        font-size: 0.4rem; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

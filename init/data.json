@@ -1,0 +1,298 @@
+[
+  {
+    "id": "placeholder-boleroNeo",
+    "title": "MAHINDRA BOLERO NEO",
+    "subtitle": "RUGGED RELIABILITY. TRAVEL READY.",
+    "description": "The Bolero Neo is built for rugged territories and demanding operational protocols. Its robust frame ensures stability across varied terrain.",
+    "imagePath": "/image/car1.jpg",
+    "summaryPrice": "₹ 2,000",
+    "specs": [
+      { "icon": "fas fa-car-side", "label": "CLASSIFICATION", "value": "mahindra bolero neo" },
+      { "icon": "fas fa-gas-pump", "label": "ENGINE", "value": "D. DIESEL" }
+    ],
+    "rates": {
+      "kmRates": [
+        { "area": "PLAINS/FLAT TERRITORY", "acActive": "₹ 10.00"},
+        { "area": "MOUNTAIN/RUGGED TERRITORY", "acActive": "₹ 13.00"} 
+      ],
+      "dailyMins": [
+        { "boundary": "INTRA-DISTRICT (LOCAL)", "distance": "1 day", "charge": "₹ 2,000" },
+        { "boundary": "INTER-DISTRICT (OUTSTATION)", "distance": "1 day", "charge": "₹ 2,300" }
+      ]
+    },
+    "driverFees": [
+      { "label": " FOOD WITHIN DISTRICT (LOCAL)", "amount": "₹ 200.00 / DAY" },
+      { "label": " FOOD OUTSIDE DISTRICT (OUTSTATION)", "amount": "₹ 300.00 / DAY" },
+      { "label": "HOLT CHARGES(PLAIN)", "amount": "₹ 500.00," },
+      { "label": "HOLT CHARGES(HILL)", "amount": "₹ 1000.00" },
+      { "label": "EXTRA HOURS(BEYOND 8 HR WITHIN DISTRICT", "amount": "₹ 100(plain)," },
+       { "label": "EXTRA HOURS(BEYOND 8 HR OUTSIDE DISTRICT", "amount": "₹ 200(hill)," },
+       { "label": "EXTRA HOURS(BEYOND 12 HR WITHIN DISTRICT", "amount": "₹ 100(plain)," },
+       { "label": "EXTRA HOURS(BEYOND 12 HR OUTSIDE DISTRICT", "amount": "₹ 200(hill)," }
+    
+    ],
+    
+    "protocol": [
+      "Driver details and cab regn no details will be provided before 1 hr of arrival time",
+      "Up- gradation of cab is possible on extra charges ",
+      "Standing AC (per 30 min rs100)sedan and suv cabs.",
+      "Per day minimum allowed time for transportation is local station 8hrs , outstation -10 hrs",
+      "Itinerary details : kms and hours will be calculated from Jorhat city to Jorhat city",
+      "Package includes : fuel charges, GST(5%), toll tax and parking charges, interstate tax charges(if any), 50% advance payment after vahicle booking"
+    ],
+    "contact": {
+      "callNumber": "+919435796758",
+      "whatsappNumber": "+919435796758"
+    }
+  },
+
+
+  
+
+
+
+  {
+    "id": "placeholder-Dzire",
+    "title": "MARUTI DZIRE",
+    "subtitle": "URBAN EFFICIENCY. COMFORT CLASS.",
+    "description": "The Maruti Dzire offers excellent mileage and comfort, making it the ideal choice for intra-city missions and short-range transport needs.",
+    "imagePath": "/image/car2.jpg",
+    "summaryPrice": "₹ 1,000",
+    "specs": [
+      { "icon": "fas fa-car-side", "label": "CLASSIFICATION", "value": "maruti dzire" },
+      { "icon": "fas fa-gas-pump", "label": "ENGINE", "value": "D. DIESEL" }
+    ],
+    "rates": {
+      "kmRates": [
+        { "area": "PLAINS/FLAT TERRITORY", "acActive": "₹ 8.00"},
+        { "area": "MOUNTAIN/RUGGED TERRITORY", "acActive": "₹ 10.00"} 
+      ],
+      "dailyMins": [
+        { "boundary": "INTRA-DISTRICT (LOCAL)", "distance": "1 day", "charge": "₹ 1,000" },
+        { "boundary": "INTER-DISTRICT (OUTSTATION)", "distance": "1 day", "charge": "₹ 1,500" }
+      ]
+    },
+    "driverFees": [
+      { "label": " FOOD WITHIN DISTRICT (LOCAL)", "amount": "₹ 200.00 / DAY" },
+      { "label": " FOOD OUTSIDE DISTRICT (OUTSTATION)", "amount": "₹ 300.00 / DAY" },
+      { "label": "HOLT CHARGES(PLAIN)", "amount": "₹ 500.00," },
+      { "label": "HOLT CHARGES(HILL)", "amount": "₹ 1000.00" },
+      { "label": "EXTRA HOURS(BEYOND 8 HR WITHIN DISTRICT", "amount": "₹ 100(plain)," },
+       { "label": "EXTRA HOURS(BEYOND 8 HR OUTSIDE DISTRICT", "amount": "₹ 200(hill)," }, 
+        { "label": "EXTRA HOURS(BEYOND 12 HR WITHIN DISTRICT", "amount": "₹ 150(plain)," },
+       { "label": "EXTRA HOURS(BEYOND 12 HR OUTSIDE DISTRICT", "amount": "₹ 150(hill)," }
+    
+    ],
+    
+    "protocol": [
+      "Driver details and cab regn no details will be provided before 1 hr of arrival time",
+      "Up- gradation of cab is possible on extra charges ",
+      "Standing AC (per 30 min rs100)sedan and suv cabs.",
+      "Per day minimum allowed time for transportation is local station 8hrs , outstation -10 hrs",
+      "Itinerary details : kms and hours will be calculated from Jorhat city to Jorhat city",
+      "Package includes : fuel charges, GST(5%), toll tax and parking charges, interstate tax charges(if any), 50% advance payment after vahicle booking"
+    ],
+    "contact": {
+      "callNumber": "+919435796758",
+      "whatsappNumber": "+919435796758"
+    }
+  },
+
+
+
+
+  
+  {
+    "id": "placeholder-BoleroB6",
+    "title": "MAHINDRA BOLERO B6",
+    "subtitle": "COMMANDING PRESENCE. ALL-TERRAIN.",
+    "description": "The classic Bolero B6 remains the go-to utility vehicle for heavy-duty assignments and challenging terrain requiring absolute durability.",
+    "imagePath": "/image/car3.jpg",
+    "summaryPrice": "₹ 2,000",
+    "specs": [
+      { "icon": "fas fa-car-side", "label": "CLASSIFICATION", "value": "mahindra bolero neo" },
+      { "icon": "fas fa-gas-pump", "label": "ENGINE", "value": "D. DIESEL" }
+    ],
+    "rates": {
+      "kmRates": [
+        { "area": "PLAINS/FLAT TERRITORY", "acActive": "₹ 10.00"},
+        { "area": "MOUNTAIN/RUGGED TERRITORY", "acActive": "₹ 13.00"} 
+      ],
+      "dailyMins": [
+        { "boundary": "INTRA-DISTRICT (LOCAL)", "distance": "1 day", "charge": "₹ 2,000" },
+        { "boundary": "INTER-DISTRICT (OUTSTATION)", "distance": "1 day", "charge": "₹ 2,300" }
+      ]
+    },
+    "driverFees": [
+      { "label": " FOOD WITHIN DISTRICT (LOCAL)", "amount": "₹ 200.00 / DAY" },
+      { "label": " FOOD OUTSIDE DISTRICT (OUTSTATION)", "amount": "₹ 300.00 / DAY" },
+      { "label": "HOLT CHARGES(PLAIN)", "amount": "₹ 500.00," },
+      { "label": "HOLT CHARGES(HILL)", "amount": "₹ 1000.00" },
+      { "label": "EXTRA HOURS(BEYOND 8 HR WITHIN DISTRICT", "amount": "₹ 100(plain)," },
+       { "label": "EXTRA HOURS(BEYOND 8 HR OUTSIDE DISTRICT", "amount": "₹ 200(hill)," },
+       { "label": "EXTRA HOURS(BEYOND 12 HR WITHIN DISTRICT", "amount": "₹ 100(plain)," },
+       { "label": "EXTRA HOURS(BEYOND 12 HR OUTSIDE DISTRICT", "amount": "₹ 200(hill)," }
+    
+    ],
+    
+    "protocol": [
+      "Driver details and cab regn no details will be provided before 1 hr of arrival time",
+      "Up- gradation of cab is possible on extra charges ",
+      "Standing AC (per 30 min rs100)sedan and suv cabs.",
+      "Per day minimum allowed time for transportation is local station 8hrs , outstation -10 hrs",
+      "Itinerary details : kms and hours will be calculated from Jorhat city to Jorhat city",
+      "Package includes : fuel charges, GST(5%), toll tax and parking charges, interstate tax charges(if any), 50% advance payment after vahicle booking"
+    ],
+    "contact": {
+      "callNumber": "+919435796758",
+      "whatsappNumber": "+919435796758"
+    }
+  },
+
+
+
+  {
+    "id": "placeholder-HondaAmaze",
+    "title": "HONDA AMAZE",
+    "subtitle": "REFINED MOBILITY. CLASS A EFFICIENCY.",
+    "description": "The Amaze provides a blend of comfort and superior road handling for mid-range executive transport and reliable logistical movements.",
+    "imagePath": "/image/car4.jpg",
+    "summaryPrice": "₹ 2,000",
+    "specs": [
+      { "icon": "fas fa-car-side", "label": "CLASSIFICATION", "value": "mahindra bolero neo" },
+      { "icon": "fas fa-gas-pump", "label": "ENGINE", "value": "D. DIESEL" }
+    ],
+    "rates": {
+      "kmRates": [
+        { "area": "PLAINS/FLAT TERRITORY", "acActive": "₹ 10.00"},
+        { "area": "MOUNTAIN/RUGGED TERRITORY", "acActive": "₹ 13.00"} 
+      ],
+      "dailyMins": [
+        { "boundary": "INTRA-DISTRICT (LOCAL)", "distance": "1 day", "charge": "₹ 2,000" },
+        { "boundary": "INTER-DISTRICT (OUTSTATION)", "distance": "1 day", "charge": "₹ 2,300" }
+      ]
+    },
+    "driverFees": [
+      { "label": " FOOD WITHIN DISTRICT (LOCAL)", "amount": "₹ 200.00 / DAY" },
+      { "label": " FOOD OUTSIDE DISTRICT (OUTSTATION)", "amount": "₹ 300.00 / DAY" },
+      { "label": "HOLT CHARGES(PLAIN)", "amount": "₹ 500.00," },
+      { "label": "HOLT CHARGES(HILL)", "amount": "₹ 1000.00" },
+      { "label": "EXTRA HOURS(BEYOND 8 HR WITHIN DISTRICT", "amount": "₹ 100(plain)," },
+       { "label": "EXTRA HOURS(BEYOND 8 HR OUTSIDE DISTRICT", "amount": "₹ 200(hill)," },
+       { "label": "EXTRA HOURS(BEYOND 12 HR WITHIN DISTRICT", "amount": "₹ 100(plain)," },
+       { "label": "EXTRA HOURS(BEYOND 12 HR OUTSIDE DISTRICT", "amount": "₹ 200(hill)," }
+    
+    ],
+    
+    "protocol": [
+      "Driver details and cab regn no details will be provided before 1 hr of arrival time",
+      "Up- gradation of cab is possible on extra charges ",
+      "Standing AC (per 30 min rs100)sedan and suv cabs.",
+      "Per day minimum allowed time for transportation is local station 8hrs , outstation -10 hrs",
+      "Itinerary details : kms and hours will be calculated from Jorhat city to Jorhat city",
+      "Package includes : fuel charges, GST(5%), toll tax and parking charges, interstate tax charges(if any), 50% advance payment after vahicle booking"
+    ],
+    "contact": {
+      "callNumber": "+919435796758",
+      "whatsappNumber": "+919435796758"
+    }
+  },
+
+
+  {
+    "id": "placeholder-Innova",
+    "title": "TOYOTA INNOVA",
+    "subtitle": "THE PEOPLE MOVER. RELIABLE FLEET ASSET.",
+    "description": "The standard Innova model is a workhorse, providing unmatched space, comfort, and reliability for large group missions and long-haul assignments.",
+    "imagePath": "/image/car5.jpg",
+    "summaryPrice": "₹ 2,000",
+    "specs": [
+      { "icon": "fas fa-car-side", "label": "CLASSIFICATION", "value": "mahindra bolero neo" },
+      { "icon": "fas fa-gas-pump", "label": "ENGINE", "value": "D. DIESEL" }
+    ],
+    "rates": {
+      "kmRates": [
+        { "area": "PLAINS/FLAT TERRITORY", "acActive": "₹ 10.00"},
+        { "area": "MOUNTAIN/RUGGED TERRITORY", "acActive": "₹ 13.00"} 
+      ],
+      "dailyMins": [
+        { "boundary": "INTRA-DISTRICT (LOCAL)", "distance": "1 day", "charge": "₹ 2,000" },
+        { "boundary": "INTER-DISTRICT (OUTSTATION)", "distance": "1 day", "charge": "₹ 2,300" }
+      ]
+    },
+    "driverFees": [
+      { "label": " FOOD WITHIN DISTRICT (LOCAL)", "amount": "₹ 200.00 / DAY" },
+      { "label": " FOOD OUTSIDE DISTRICT (OUTSTATION)", "amount": "₹ 300.00 / DAY" },
+      { "label": "HOLT CHARGES(PLAIN)", "amount": "₹ 500.00," },
+      { "label": "HOLT CHARGES(HILL)", "amount": "₹ 1000.00" },
+      { "label": "EXTRA HOURS(BEYOND 8 HR WITHIN DISTRICT", "amount": "₹ 100(plain)," },
+       { "label": "EXTRA HOURS(BEYOND 8 HR OUTSIDE DISTRICT", "amount": "₹ 200(hill)," },
+       { "label": "EXTRA HOURS(BEYOND 12 HR WITHIN DISTRICT", "amount": "₹ 100(plain)," },
+       { "label": "EXTRA HOURS(BEYOND 12 HR OUTSIDE DISTRICT", "amount": "₹ 200(hill)," }
+    
+    ],
+    
+    "protocol": [
+      "Driver details and cab regn no details will be provided before 1 hr of arrival time",
+      "Up- gradation of cab is possible on extra charges ",
+      "Standing AC (per 30 min rs100)sedan and suv cabs.",
+      "Per day minimum allowed time for transportation is local station 8hrs , outstation -10 hrs",
+      "Itinerary details : kms and hours will be calculated from Jorhat city to Jorhat city",
+      "Package includes : fuel charges, GST(5%), toll tax and parking charges, interstate tax charges(if any), 50% advance payment after vahicle booking"
+    ],
+    "contact": {
+      "callNumber": "+919435796758",
+      "whatsappNumber": "+919435796758"
+    }
+
+  },
+
+
+
+  {
+    "id": "placeholder-InnovaCrysta",
+    "title": "TOYOTA INNOVA CRYSTA",
+    "subtitle": "PREMIUM TRANSPORT. EXECUTIVE CLASS.",
+    "description": "The Innova Crysta is reserved for executive-level missions, offering enhanced comfort, silent operation, and superior cabin refinement.",
+    "imagePath": "/image/car6.jpg",
+    "summaryPrice": "₹ 2,000",
+    "specs": [
+      { "icon": "fas fa-car-side", "label": "CLASSIFICATION", "value": "mahindra bolero neo" },
+      { "icon": "fas fa-gas-pump", "label": "ENGINE", "value": "D. DIESEL" }
+    ],
+    "rates": {
+      "kmRates": [
+        { "area": "PLAINS/FLAT TERRITORY", "acActive": "₹ 10.00"},
+        { "area": "MOUNTAIN/RUGGED TERRITORY", "acActive": "₹ 13.00"} 
+      ],
+      "dailyMins": [
+        { "boundary": "INTRA-DISTRICT (LOCAL)", "distance": "1 day", "charge": "₹ 2,000" },
+        { "boundary": "INTER-DISTRICT (OUTSTATION)", "distance": "1 day", "charge": "₹ 2,300" }
+      ]
+    },
+    "driverFees": [
+      { "label": " FOOD WITHIN DISTRICT (LOCAL)", "amount": "₹ 200.00 / DAY" },
+      { "label": " FOOD OUTSIDE DISTRICT (OUTSTATION)", "amount": "₹ 300.00 / DAY" },
+      { "label": "HOLT CHARGES(PLAIN)", "amount": "₹ 500.00," },
+      { "label": "HOLT CHARGES(HILL)", "amount": "₹ 1000.00" },
+      { "label": "EXTRA HOURS(BEYOND 8 HR WITHIN DISTRICT", "amount": "₹ 100(plain)," },
+       { "label": "EXTRA HOURS(BEYOND 8 HR OUTSIDE DISTRICT", "amount": "₹ 200(hill)," },
+       { "label": "EXTRA HOURS(BEYOND 12 HR WITHIN DISTRICT", "amount": "₹ 100(plain)," },
+       { "label": "EXTRA HOURS(BEYOND 12 HR OUTSIDE DISTRICT", "amount": "₹ 200(hill)," }
+    
+    ],
+    
+    "protocol": [
+      "Driver details and cab regn no details will be provided before 1 hr of arrival time",
+      "Up- gradation of cab is possible on extra charges ",
+      "Standing AC (per 30 min rs100)sedan and suv cabs.",
+      "Per day minimum allowed time for transportation is local station 8hrs , outstation -10 hrs",
+      "Itinerary details : kms and hours will be calculated from Jorhat city to Jorhat city",
+      "Package includes : fuel charges, GST(5%), toll tax and parking charges, interstate tax charges(if any), 50% advance payment after vahicle booking"
+    ],
+    "contact": {
+      "callNumber": "+919435796758",
+      "whatsappNumber": "+919435796758"
+    }
+  }
+]

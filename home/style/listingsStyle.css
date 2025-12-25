@@ -1,0 +1,220 @@
+/* //listing section of the car , 2nd main section */
+
+.scroll-navigation {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.car-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0 40px;
+    gap: 30px;
+    padding: 20px 0;
+    margin: 0 20px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.car-scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.car-card {
+    min-width: 345px;
+    max-width: 40vw;
+    background-color: var(--color-charcoal);
+    border: 1px solid rgba(77, 196, 211, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    scroll-snap-align: start;
+    opacity: 0.95;
+    transform: translateY(0);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.4s;
+    cursor: pointer;
+}
+
+.car-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    opacity: 1;
+}
+
+.car-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease-out;
+}
+
+.car-card:hover img {
+    transform: scale(1.05);
+}
+
+.card-details {
+    padding: 25px;
+}
+
+.card-details h3 {
+    font-family: var(--font-header);
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 1.6rem;
+}
+
+.card-details p {
+    color: var(--color-light-grey);
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: var(--color-accent-hover);
+    margin-bottom: 20px;
+}
+
+.price small {
+    font-size: 0.5em;
+    font-weight: 300;
+    color: var(--color-light-grey);
+}
+
+.btn-card {
+    display: block;
+    text-align: center;
+    background-color: transparent;
+    color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+    padding: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-card:hover {
+    background-color: var(--color-accent);
+    color: var(--color-dark);
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(77,196,211,0.8);
+    color: var(--color-dark);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 10;
+    transition: background 0.3s;
+    border-radius: 4px;
+}
+
+.scroll-btn:hover {
+    background: var(--color-accent-hover);
+}
+
+.left-btn { left: 10px; }
+.right-btn { right: 10px; }
+
+/*RESPONSIVENESS*/
+@media (max-width: 600px) {
+    .section-title {
+        font-size: 0.3rem;     
+        letter-spacing: 1px;
+        margin-left: 0.5px;
+        /* margin-right: 1px; */
+    }
+
+    .section-title span {
+        font-size: inherit;    
+    }
+
+ 
+    .car-card {
+        min-width: 65vw;       
+        height: 220px;          
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #000;
+        padding: 0;
+    }
+
+    
+    .car-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;      
+    }
+
+    
+    .card-details {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 15px;
+        background: linear-gradient(
+            to top,
+            rgba(0,0,0,0.35) 40%,
+            rgba(0,0,0,0) 100%
+        );
+
+        color: #fff;
+    }
+
+    
+    .card-details h3 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 3px;
+    }
+
+    .card-details p {
+        font-size: 0.75rem;
+    }
+
+    .price {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .price small {
+        font-size: 0.6em;
+    }
+
+    .btn-card {
+        padding: 8px 10px;
+        font-size: 0.75rem;
+        text-align: center;
+        background: rgba(255,255,255,0.2);
+        backdrop-filter: blur(4px);
+        border: 1px solid rgba(255,255,255,0.25);
+        color: white;
+        border-radius: 6px;
+    }
+
+
+    .car-card {
+        opacity: 0;
+        transform: translateY(15px);
+        animation: smoothFade 0.6s ease forwards;
+    }
+
+    @keyframes smoothFade {
+        from { opacity: 0; transform: translateY(25px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .car-scroll-container {
+        gap: 16px;
+        padding: 20px 10px;
+    }
+}

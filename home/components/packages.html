@@ -1,0 +1,115 @@
+<section id="packages" class="section-padding">
+    <h2 class="section-title"><span class="cyan-accent">TOUR</span> PACKAGES</h2>
+
+    <div class="packages-grid">
+        
+        <div 
+            class="package-card left top clickable-card" 
+            style="background-image: url('/image/PacageAssam.jpg');"
+            data-package="Assam Expedition"
+            tabindex="0"
+            role="button"
+        >
+            <h3>The <span class="cyan-accent">Assam</span> Expedition</h3>
+            <div class="card-action-trigger">Kaziranga NP • Pobitora WLS • Kamakhya • Guwahati • Majuli • Jorhat • Tezpur, and beyond</div>
+        </div>
+
+        <div 
+            class="package-card center clickable-card" 
+            style="background-image: url('/image/PacageMeghalaya.jpg');"
+            data-package="Meghalaya Trail"
+            tabindex="0"
+            role="button"
+        >
+            <h3>The <span class="cyan-accent">Meghalaya</span> Trail</h3>
+            <div class="card-action-trigger">Elephant Falls • Double Decker Living Root Bridge • Seven Sisters • Krangshuri • Nohkalikai • Dainthlen • Mawlynnong,and beyond</div>
+        </div>
+
+        <div 
+            class="package-card right bottom clickable-card" 
+            style="background-image: url('/image/pacageArunachal.jpg');"
+            data-package="Arunachal Escape"
+            tabindex="0"
+            role="button"
+        >
+            <h3>The <span class="cyan-accent">Arunachal</span> Escape</h3>
+            <div class="card-action-trigger">Ziro • Sela Pass • Bomdila • Itanagar • Bumla Pass • Pasighat • Namsai • Tezu • Mechuka • Anini,and beyond </div>
+        </div>
+
+    </div>
+
+
+    <div id="action-menu-overlay">
+        <div class="action-menu-container">
+            <button class="menu-close-btn" aria-label="Close Contact Menu">&times;</button>
+            <h3 class="menu-title">Select Contact Method</h3>
+            <div class="action-options-grid">
+                <a id="action-call" href="#" class="action-btn call-btn">📞 Call Us Directly</a>
+                <a id="action-whatsapp" href="#" target="_blank" class="action-btn whatsapp-btn">💬 WhatsApp Us</a>
+            </div>
+            <p class="menu-note">Interested in: <span id="selected-package-name"></span></p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const packagesSection = document.getElementById("packages");
+            const actionOverlay = document.getElementById("action-menu-overlay");
+            if (!packagesSection) {
+                console.error("ERROR: Package section (#packages) not found!");
+                return;
+            }
+            if (!actionOverlay) {
+                console.error("ERROR: Action menu overlay (#action-menu-overlay) not found!");
+                return;
+            }
+
+            console.log("SUCCESS: Both package section and action menu found in DOM.");
+
+
+            const closeMenuBtn = document.querySelector(".menu-close-btn");
+            const callLink = document.getElementById("action-call");
+            const whatsappLink = document.getElementById("action-whatsapp");
+            const packageNameDisplay = document.getElementById("selected-package-name");
+
+            const CONTACT_NUMBER = "+919435796758"; 
+            function openActionMenu(packageName) {
+                const defaultMessage = `Hello, I am interested in the ${packageName} package. Can you please share more details?`;
+                const whatsappMessageEncoded = encodeURIComponent(defaultMessage);
+                
+                callLink.href = `tel:${CONTACT_NUMBER}`;
+                whatsappLink.href = `https://wa.me/${CONTACT_NUMBER.replace(/[^\d+]/g, '')}?text=${whatsappMessageEncoded}`; 
+                
+                packageNameDisplay.textContent = packageName;
+                actionOverlay.classList.add("open");
+                document.body.style.overflow = "hidden";
+            }
+
+            function closeActionMenu() {
+                actionOverlay.classList.remove("open");
+                document.body.style.overflow = "auto";
+            }
+            
+            packagesSection.addEventListener("click", (event) => {
+                const cardElement = event.target.closest(".clickable-card"); 
+
+                if (cardElement) {
+                    const packageName = cardElement.getAttribute("data-package"); 
+                    if (packageName) {
+                        openActionMenu(packageName);
+                    }
+                }
+            });
+
+            closeMenuBtn.addEventListener("click", closeActionMenu);
+            actionOverlay.addEventListener("click", (event) => {
+                if (event.target === actionOverlay) {
+                    closeActionMenu();
+                }
+            });
+            console.log("SUCCESS: Click listeners attached.");
+        });
+    </script>
+</body>
+</html>
+</section>

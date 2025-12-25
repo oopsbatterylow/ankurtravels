@@ -1,0 +1,166 @@
+/* intro page stylings */
+
+/* setting up my global variables with the basic setup*/
+:root {
+    --color-dark: #0b0b0b;
+    --color-charcoal: #1a1a1a;
+    --color-accent: #4DC4D3; 
+    --color-accent-hover: #77e6f3;
+    --font-primary: 'Poppins', sans-serif;
+    --font-header: 'Audiowide', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+}
+
+body {
+    background: var(--color-dark);
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.cyan-accent {
+    color: var(--color-accent);
+}
+
+.intro-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+/* --- CAR ANIMATION (intro r agor section tu --- */
+
+.car {
+    position: absolute;
+    left: -200px; 
+    width: 180px; 
+    top: 50%;
+    transform: translateY(-50%);
+    animation: drive 4s ease forwards;
+    filter: drop-shadow(0 0 10px var(--color-accent));  
+}
+
+
+/* pause and all and exit of the car */
+@keyframes drive {
+    0% { left: -200px; opacity: 1; }
+    40% { left: 40%; opacity: 1; }  
+    45% { left: 40%; opacity: 1; }
+    55% { left: 40%; opacity: 1; } 
+    100% { left: 120%; opacity: 0; }
+}
+
+
+/* tag line */
+.mid-tagline {
+    position: absolute;
+    top: 40%; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--color-accent-hover);
+    text-shadow: 0 0 8px rgba(77, 196, 211, 0.7);
+    animation: midTaglineFade 2.2s ease forwards 1.8s; 
+}
+
+@keyframes midTaglineFade {
+    0% { opacity: 0; transform: translateX(-50%) translateY(10px); }
+    10% { opacity: 1; transform: translateX(-50%) translateY(0); } 
+    100% { opacity: 0; transform: translateX(-50%) translateY(-10px); } 
+}
+
+/* logo +  button */
+
+.final-screen-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation: pop 0.70s ease forwards 3.50s; 
+}
+
+
+.final-screen-content > .car {
+    position: static;
+    transform: none;
+    animation: none;
+    width: 200px; 
+    height: auto;
+    margin-bottom: 5px;
+    filter: drop-shadow(0 0 10px var(--color-accent)) 
+            brightness(1.5) 
+            saturate(1.5); 
+}
+
+.brand-text {
+    width: 100%;
+    color: white;
+    font-family: var(--font-header);
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.cta-btn {
+    padding: 14px 35px;
+    font-size: 1.2rem;
+    background: var(--color-accent);
+    color: var(--color-dark);
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(77, 196, 211, 0.5);
+}
+
+.cta-btn:hover {
+    background: var(--color-accent-hover);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--color-accent-hover);
+}
+
+@keyframes pop {
+    0% { opacity: 0; transform: translate(-50%, -50%) scale(0.9); }
+    100% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}
+
+
+/* adding responsiveness */
+
+@media (max-width: 768px) {
+    .car {
+        width: 130px;
+    }
+    
+    .mid-tagline {
+        font-size: 1.1rem;
+    }
+    
+    .brand-text {
+        font-size: 1.8rem;
+    }
+
+    .brand-logo-icon {
+        font-size: 3rem;
+    }
+    
+    .cta-btn {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+}
